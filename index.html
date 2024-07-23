@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AccuWeather</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <span class="logo"><i class="fa-solid fa-sun"></i></span>
+          <h1 class="location">
+            <span class="accu">AccuWeather</span> Kathmandu, Bagmati 27°c
+          </h1>
+        </div>
+        <div class="header-right">
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Address, City or Zip Code"
+          />
+          <select class="location">
+            <option value="Location">Location</option>
+          </select>
+          <button>▷</button>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav-item" href="#">TODAY</a>
+        <a class="nav-item" href="#">HOURLY</a>
+        <a class="nav-item" href="#">DAILY</a>
+        <a class="nav-item" href="#">RADAR</a>
+        <a class="nav-item" href="#">MINUTECAST</a>
+        <a class="nav-item" href="#">MONTHLY</a>
+        <a class="nav-item" href="#">AIR QUALITY</a>
+        <a class="nav-item" href="#">HEALTH & ACTIVITIES</a>
+        <a class="nav-item" href="#">FOR BUSINESS</a>
+      </nav>
+    </header>
+    <div class="advertisement">
+      <img
+        style="margin-left: 20.5%"
+        src="https://www.bcaa.edu.sg/images/librariesprovider2/default-album/iwsd-2024-banner.jpg?sfvrsn=25189b81_0"
+        alt=""
+        width="900px"
+        height="150px"
+      />
+    </div>
+    <div class="huge-container">
+      <div class="weather-left">
+        <section class="today-weather">
+          <div class="today">
+            <p>TODAYS WEATHER'S</p>
+            <p>SAT, JUL 13</p>
+          </div>
+          <div class="today-weather-info">
+            <p>
+              <i class="fa-solid fa-cloud-bolt fa-2x	" style="color: rgb(134, 135, 136);"></i> Cloudy and humid with
+              widely separated thunderstorms
+              <br />
+              <b>Hi: 30°</b>
+            </p>
+            <p>
+              <i class="fa-solid fa-cloud-bolt fa-2x	" style="color: rgb(134, 135, 136);"></i>Tonight: A couple of evening
+              showers and a thunderstorm;
+              <br />
+              otherwise, cloudy and humid
+              <b>Lo: 21°</b>
+            </p>
+          </div>
+        </section>
+        <div class="weather">
+          <div class="weather-info">
+            <div class="weat">
+              <div class="temp" style="display: flex; gap: 50px;">
+                <i class="weather-icon fas fa-cloud-sun fa-3x" style="color: rgb(134, 135, 136);"></i>
+                <h2 class="weather-temp">29°</h2>
+              </div>
+              <span class="feel">
+                <p>RealFeel 34`</p>
+
+                <p><i class="fa-solid fa-droplet"></i> 40% ^</p>
+              </span>
+            </div>
+            <p>Mostly cloudy</p>
+          </div>
+          <div class="weather-details">
+            <div class="weather-info-left">
+              <div class="details">
+                <p class="item">RealFeel shade</p>
+                <p>20<sup>o</sup></p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Wind ESE5</p>
+                <p>5Km/h</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Wind Gusts</p>
+                <p>19Km/h</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Humidity</p>
+                <p>20%</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Humidity</p>
+                <p>67%(very Humid)</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Dew Point</p>
+                <p>22 <sup>C</sup></p>
+              </div>
+              <hr />
+            </div>
+            <div class="weather-info-right">
+              <div class="details">
+                <p class="item">Air Quality</p>
+                <p style="color: aquamarine">fair</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Max UV Index</p>
+                <p>4 moderate</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Rain</p>
+                <p>5.9mm</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Cloud Cover</p>
+                <p>89%</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Visibility</p>
+                <p>5km</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p class="item">Cloud Ceiling</p>
+                <p>2000m</p>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="weathers">
+          <div class="weather-info">
+            <div class="weat">
+              <i class="weather-icon fas fa-cloud-sun fa-3x" style="color: rgb(134, 135, 136);"></i>
+              <h2 class="weather-temp">29°</h2>
+              <span class="feel">
+                <p>RealFeel 34`</p>
+
+                <p>
+                  <i class="fa-solid fa-droplet"></i> 40%
+                  <i class="fa-solid fa-chevron-down"></i>
+                </p>
+              </span>
+            </div>
+            <p>Mostly cloudy</p>
+          </div>
+          <div class="weather-details">
+            <div class="weathers-info-left">
+              <div class="details">
+                <p>RealFeel shade</p>
+                <p>20 <sup>o</sup></p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Wind ESE</p>
+                <p>5 Km/h</p>
+              </div>
+              <hr />
+            </div>
+            <div class="weather-info-right">
+              <div class="details">
+                <p>Air Quality</p>
+                <p style="color: aquamarine">Fair</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Max UV Index</p>
+                <p>4 moderate</p>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="weathers">
+          <div class="weather-info">
+            <div class="weat">
+              <i class="weather-icon fas fa-cloud-sun fa-3x" style="color: rgb(134, 135, 136);"></i>
+              <h2 class="weather-temp">29°</h2>
+              <span class="feel">
+                <p>RealFeel 34`</p>
+
+                <p>
+                  <i class="fa-solid fa-droplet"></i> 40%
+                  <i class="fa-solid fa-chevron-down"></i>
+                </p>
+              </span>
+            </div>
+            <p>Mostly cloudy</p>
+          </div>
+          <div class="weather-details">
+            <div class="weathers-info-left">
+              <div class="details">
+                <p>RealFeel shade</p>
+                <p>20 <sup>o</sup></p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Wind ESE</p>
+                <p>5 Km/h</p>
+              </div>
+              <hr />
+            </div>
+            <div class="weather-info-right">
+              <div class="details">
+                <p>Air Quality</p>
+                <p style="color: aquamarine">Fair</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Max UV Index</p>
+                <p>4 moderate</p>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="weathers">
+          <div class="weather-info">
+            <div class="weat">
+              <i class="weather-icon fas fa-cloud-sun fa-3x" style="color: rgb(134, 135, 136);"></i>
+              <h2 class="weather-temp">29°</h2>
+              <span class="feel">
+                <p>RealFeel 34`</p>
+
+                <p>
+                  <i class="fa-solid fa-droplet"></i> 40%
+                  <i class="fa-solid fa-chevron-down"></i>
+                </p>
+              </span>
+            </div>
+            <p>Mostly cloudy</p>
+          </div>
+          <div class="weather-details">
+            <div class="weathers-info-left">
+              <div class="details">
+                <p>RealFeel shade</p>
+                <p>20 <sup>o</sup></p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Wind ESE</p>
+                <p>5 Km/h</p>
+              </div>
+              <hr />
+            </div>
+            <div class="weather-info-right">
+              <div class="details">
+                <p>Air Quality</p>
+                <p style="color: aquamarine">Fair</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Max UV Index</p>
+                <p>4 moderate</p>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="link-container">
+          <div class="section">
+            <h5 style="color: rgb(180, 178, 178)">Further Ahead</h5>
+            <ul>
+              <li>
+                <a href="#">Tomorrow <span>→</span></a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">Sunday <span>→</span></a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">Daily <span>→</span></a>
+              </li>
+              <hr />
+            </ul>
+          </div>
+          <div class="section">
+            <h5 style="color: rgb(180, 178, 178)">Around the Globe</h5>
+            <ul>
+              <li>
+                <a href="#">Hurricane <span>→</span></a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">Radar & Maps <span>→</span></a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">News <span>→</span></a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">Video <span>→</span></a>
+              </li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="ad-container">
+          <div class="circle">
+            <p>></p>
+          </div>
+        </div>
+        <div class="topstories">
+          <h2>Top Stories</h2>
+          <hr />
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">SEVERE WEATHER</p>
+                <p>
+                  Derecho turns deadly,<br />tornado reported near<br />Chicago's
+                  O'Hare airport
+                </p>
+                <p style="color: rgb(115, 110, 110)">11 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="1.png" height="150px" width="200px" />
+              </div>
+            </div>
+
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">SEVERE WEATHER</p>
+                <p>
+                  Severe storms could break<br />more than the heat in<br />eastern
+                  US
+                </p>
+                <p style="color: rgb(115, 110, 110)">11 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="2.png" height="150px" width="200px" />
+              </div>
+            </div>
+
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">SEVERE WEATHER</p>
+                <p>
+                  Why snow was reported<br />amid 90-degree<br />temperatures in
+                  Philadelphia
+                </p>
+                <p style="color: rgb(115, 110, 110)">16 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="3.png" height="150px" width="200px" />
+              </div>
+            </div>
+
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">WEATHER FORECASTS</p>
+                <p>
+                  Relief from eastern US<br />
+                  heatwave is on<br />
+                  the way
+                </p>
+                <p style="color: rgb(115, 110, 110)">16 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="4.png" height="150px" width="200px" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ad-container"
+          style="margin-top: 10px; margin-bottom: 10px !important"
+        >
+          <div class="circle">
+            <p>></p>
+          </div>
+        </div>
+        <div class="topstories">
+          <h2>Feature stories</h2>
+          <hr />
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">SEVERE WEATHER</p>
+                <p>
+                  Derecho turns deadly,<br />tornado reported near<br />Chicago's
+                  O'Hare airport
+                </p>
+                <p style="color: rgb(115, 110, 110)">11 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="1.png" height="150px" width="200px" />
+              </div>
+            </div>
+
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">SEVERE WEATHER</p>
+                <p>
+                  Severe storms could break<br />more than the heat in<br />eastern
+                  US
+                </p>
+                <p style="color: rgb(115, 110, 110)">11 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="2.png" height="150px" width="200px" />
+              </div>
+            </div>
+
+            <div class="topstory">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">SEVERE WEATHER</p>
+                <p>
+                  Why snow was reported<br />amid 90-degree<br />temperatures in
+                  Philadelphia
+                </p>
+                <p style="color: rgb(115, 110, 110)">16 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="3.png" height="150px" width="200px" />
+              </div>
+            </div>
+
+            <div class="topstory" style="margin-bottom: 15px">
+              <div class="stories-detail">
+                <p style="color: rgb(115, 110, 110)">WEATHER FORECASTS</p>
+                <p>
+                  Relief from eastern US<br />
+                  heatwave is on<br />
+                  the way
+                </p>
+                <p style="color: rgb(115, 110, 110)">16 hours ago</p>
+              </div>
+              <div class="stories-photo">
+                <img class="image1" src="4.png" height="150px" width="200px" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div  style=" background-color: #f5f5f5; padding-left: 20%; display: flex; font-size: small; color: rgb(123, 123, 123);">
+        <p>World > Asia > Nepal > Bagmati > Kathmandu</p>
+      </div>
+      <div style="background-color: #ebebeb; padding-left: 20%; display: flex; font-size: small; color: rgb(123, 123, 123);">
+        <p>Weather Near Kathmandu : Bhaktapur, Bagmati; Kirtipur, Bagmati; Patan, Bagmati</p>
+      </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">Proven Superior Accuracy</a></li>
+            <li><a href="#">About AccuWeather</a></li>
+            <li><a href="#">Digital Advertising</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fa-solid fa-sun fa-2xl" style="color: orangered;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-2xl"  style="color: blue;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter fa-2xl" style="color: black;"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>PRODUCTS & SERVICES</h3>
+          <ul>
+            <li><a href="#">For Business</a></li>
+            <li><a href="#">For Partners</a></li>
+            <li><a href="#">For Advertising</a></li>
+            <li><a href="#">AccuWeather APIs</a></li>
+            <li><a href="#">AccuWeather Connect</a></li>
+            <li><a href="#">RealFeel® and RealFeel Shade™</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>APPS & DOWNLOADS</h3>
+          <ul>
+            <li><a href="#">iPhone App</a></li>
+            <li><a href="#">Android App</a></li>
+            <li><a href="#">See all Apps & Downloads</a></li>
+          </ul>
+          <h3>SUBSCRIPTION SERVICES</h3>
+          <ul>
+            <li><a href="#">AccuWeather Premium</a></li>
+            <li><a href="#">AccuWeather Professional</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>MORE</h3>
+          <ul>
+            <li><a href="#">AccuWeather Ready</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Hurricane</a></li>
+            <li><a href="#">Leisure and Recreation</a></li>
+            <li><a href="#">Severe Weather</a></li>
+            <li><a href="#">Space and Astronomy</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Weather News</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 AccuWeather, Inc. "AccuWeather" and sun design are
+          registered trademarks of AccuWeather, Inc. All Rights Reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> |
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
